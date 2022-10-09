@@ -1,5 +1,4 @@
 <template>
-  <v-app>
     <v-app-bar app light flat >
       
       <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon> -->
@@ -10,9 +9,8 @@
 
       <v-app-bar-title>Hello World</v-app-bar-title>
 
-      <v-btn v-for="link in links" :key="link" text>
-          {{ link }}
-        </v-btn>
+      <router-link to="/"><v-btn text>Home</v-btn></router-link>
+      <router-link to="/about"><v-btn text>About</v-btn></router-link>
 
       <v-spacer></v-spacer>
 
@@ -21,15 +19,10 @@
       <v-btn color="yellow" icon><v-icon>mdi-star</v-icon></v-btn>
 
     </v-app-bar>
-  </v-app>
 </template>
 <script>
 export default {
-  // eslint-disable-next-line vue/multi-word-component-names
   name: "header",
-  data: () => ({
-    links: ["MENU1", "MENU2", "MENU3"],
-  }),
 };
 </script>
 <style>
