@@ -11,6 +11,7 @@
 
       <router-link to="/"><v-btn text>Home</v-btn></router-link>
       <router-link to="/about"><v-btn text>About</v-btn></router-link>
+      <router-link to="/loop"><v-btn text>Loop</v-btn></router-link>
 
       <v-spacer></v-spacer>
 
@@ -29,4 +30,10 @@ export default {
 .v-toolbar__content{
   border-bottom: 0.1px solid gainsboro;
 }
+
+a { 
+  text-decoration: none;
+  color: inherit;
+}
+
 </style>

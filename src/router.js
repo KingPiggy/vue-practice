@@ -11,6 +11,11 @@ const routes = [
     name: 'About',
     component: () => import('@/views/About'),
   },
+  {
+    path: '/loop',
+    name: 'Loop',
+    component: () => import('@/views/Loop'),
+  }
 ];
 
 export const router = createRouter({
